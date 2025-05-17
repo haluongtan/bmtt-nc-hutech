@@ -1,3 +1,8 @@
+x=10
+name = "Alice"
+is_valid = True
+
+
 a=5
 b=3
 result=a+b
@@ -190,16 +195,16 @@ greet("Tam")
 
 
 
-# from array import array
-# int_array = array('i', [1, 2, 3, 4, 5])
-# float_array= array('f',[3.14, 2.5, 6.7])
-# print(int_array[0])
-# print(float_array[2])
-# int_array[2] = 10
-# int_array.append(6)
-# float_array.remove(6.7)
+from array import array
+int_array = array('i', [1, 2, 3, 4, 5])
+float_array= array('f',[3.14, 2.5, 6.7])
+print(int_array[0])
+print(float_array[2])
+int_array[2] = 10
+int_array.append(6)
+float_array.remove(2.5)
 
-#.................................................................
+
 
 my_list = [1,2,3,4,5]
 names = ["Alice","Bob","Charlie"]
