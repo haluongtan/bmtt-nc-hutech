@@ -1,1 +1,0 @@
-# bmtt-nc-hutech
