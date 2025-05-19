@@ -1,5 +1,5 @@
 def chiaHetCho5(soNhiPhan):
-    soThapPhan = input(soNhiPhan, 2)
+    soThapPhan = int(soNhiPhan, 2)
     if soThapPhan %5==0:
         return True
     else:
