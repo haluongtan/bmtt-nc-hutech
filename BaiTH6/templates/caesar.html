@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center mb-4" style="font-weight: bold;">CAESAR CIPHER</h2>
+
+        <div class="card">
+            <div class="card-header" style="color: blue;">ENCRYPTION</div>
+            <div class="card-body">
+                <form method="POST" action="/encrypt">
+                    <div class="mb-3">
+                        <label class="form-label">Plain Text:</label>
+                        <input type="text" class="form-control" name="inputPlainText" placeholder="Input Plain Text" required autofocus/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Key:</label>
+                        <input type="number" class="form-control" name="inputKeyPlain" placeholder="Input Key" required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Encrypt</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" style="color: blue;">DECRYPTION</div>
+            <div class="card-body">
+                <form method="POST" action="/decrypt">
+                    <div class="mb-3">
+                        <label class="form-label">Cipher Text:</label>
+                        <input type="text" class="form-control" name="inputCipherText" placeholder="Input Cipher Text" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Key:</label>
+                        <input type="number" class="form-control" name="inputKeyCipher" placeholder="Input Key" required/>
+                    </div>
+                    <button type="submit" class="btn btn-success">Decrypt</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-secondary mt-3">Quay lại</a>
+    </div>
+</body>
+</html>
